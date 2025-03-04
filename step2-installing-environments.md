@@ -3,16 +3,20 @@
 1. Installing git
 `apt-get install git`
 
-2.  Installing nodejs suing Docker with npm package manager
+2.  Installing nodejs using nvm with npm package manager
 
-a. Pull the Node.js Docker image
-`docker pull node:22-alpine`
+`# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
-b. Create a Node.js container and start a Shell session:
-`docker run -it --rm --entrypoint sh node:22-alpine`
+# in lieu of restarting the shell
+\. "$HOME/.nvm/nvm.sh"
 
-c. Verify the Node.js version:
-`node -v`
+# Download and install Node.js:
+nvm install 22
 
-d. Verify npm version:
-`npm -v`
+# Verify the Node.js version:
+node -v # Should print "v22.14.0".
+nvm current # Should print "v22.14.0".
+
+# Verify npm version:
+npm -v # Should print "10.9.2". `
