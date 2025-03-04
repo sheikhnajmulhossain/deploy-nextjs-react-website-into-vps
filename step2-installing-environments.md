@@ -5,18 +5,17 @@
 
 2.  Installing nodejs using nvm with npm package manager
 
-`# Download and install nvm:
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+a. Download and install nvm:
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash`
 
-# in lieu of restarting the shell
-\. "$HOME/.nvm/nvm.sh"
+b. In lieu of restarting the shell
+`\. "$HOME/.nvm/nvm.sh"`
 
-# Download and install Node.js:
-nvm install 22
+c. Download and install Node.js:
+`nvm install 22`
 
-# Verify the Node.js version:
-node -v # Should print "v22.14.0".
-nvm current # Should print "v22.14.0".
+d. Verify the Node.js version:
+`node -v`
 
-# Verify npm version:
-npm -v # Should print "10.9.2". `
+e. Verify npm version:
+`npm -v` 
