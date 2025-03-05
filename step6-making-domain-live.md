@@ -42,7 +42,7 @@ for example `cd yourproject`
 5.  ctrl+o > enter > ctrl+x
 
 6. Create a symbolic or soft link  
-   `ln -s /etc/nginx/sites-available/carelessai.com /etc/nginx/sites-enabled/carelessai.com`
+   `ln -s /etc/nginx/sites-available/carelessai.com /etc/nginx/sites-enabled/yourdomain.com`
 
 7. Check if the file content is right or not using test configuration.  
  `sudo nginx -t`
