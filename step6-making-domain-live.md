@@ -10,13 +10,13 @@ for example `cd yourproject`
 `nano /etc/nginx/sites-available/yourdomainname.com`
 
 4. paste this and change domain names
+   
 
- `server { `
+ ----------------------
+server {
 
     listen 80;
-
     root /var/www/html;
-
     index index.html index.htm index.nginx-debian.html;
 
             server_name yourDomain.com www.yourDomain.com;
@@ -38,20 +38,20 @@ for example `cd yourproject`
                 }
 
     }
+-------------------------
+6.  ctrl+o > enter > ctrl+x
 
-5.  ctrl+o > enter > ctrl+x
-
-6. Create a symbolic or soft link  
+7. Create a symbolic or soft link  
    `ln -s /etc/nginx/sites-available/yourdomain.com /etc/nginx/sites-enabled/yourdomain.com`
 
-7. Check if the file content is right or not using test configuration.  
+8. Check if the file content is right or not using test configuration.  
  `sudo nginx -t`
 
-8.  Restart the nginx server  
+9.  Restart the nginx server  
    `sudo systemctl restart nginx`
 
-9.  Install SSL through Certbot
+10.  Install SSL through Certbot
 `apt  install certbot`
 
-10. generate SSL  
+11. generate SSL  
   `certbot`
