@@ -22,7 +22,7 @@ or for npm
 
 4. The project will keep on running even after closing the terminal
 ` npm install -g pm2
-pm2 start "bun dev" --name nextjs
+pm2 start "bun dev"
 pm2 save
 pm2 startup `
 
