@@ -11,7 +11,7 @@ for example `cd yourproject`
 
 4. paste this and change domain names
 
-  server {
+ `server { `
 
     listen 80;
 
