@@ -19,3 +19,5 @@ d. Verify the Node.js version:
 
 e. Verify npm version:
 `npm -v` 
+
+3. installing bun package manager (optional)
