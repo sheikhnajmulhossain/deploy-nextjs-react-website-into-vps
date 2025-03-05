@@ -9,7 +9,7 @@
 or
 `npm install`
 
-3. Run 
+3. Run this command for temporary run or just go to step 4
 a. for one time run 
 `bun dev`
 or for npm
@@ -19,3 +19,13 @@ b. for continues run in the vps background
 `bun dev &`
 or for npm
 `npm start &` 
+
+4. The project will keep on running even after closing the terminal
+` npm install -g pm2
+pm2 start "bun dev" --name nextjs
+pm2 save
+pm2 startup `
+
+
+
+
