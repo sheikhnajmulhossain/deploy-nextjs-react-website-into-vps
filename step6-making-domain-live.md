@@ -12,7 +12,7 @@ for example `cd yourproject`
 4. paste this and change domain names
    
 
- ----------------------
+
 ` server {
     listen 80;
     root /var/www/html;
@@ -27,7 +27,7 @@ for example `cd yourproject`
                     proxy_cache_bypass $http_upgrade;
                 }
     } `
--------------------------
+
 6.  ctrl+o > enter > ctrl+x
 
 7. Create a symbolic or soft link  
